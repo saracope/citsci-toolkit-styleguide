@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after{
+ visibility:hidden;display:block;content:"";clear:both;height:0;line-height:0;margin:0;padding:0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1.page-title {
+  font-size: 2.4em;
+  
+  small {
+    font-size: .5em;
+    font-weight: normal;
+    color: @red;
+  }
+}
+
+.pattern {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.pattern-head {
+  margin: 2em 0;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 70%;
+  font-weight: normal;
+  padding: 1em 0;
+  color: @grey-dark;
+  border-bottom: 1px solid @grey-light;
+}
+
+/*COLORS *
+-----------------------------------------------*/
+@black: #000000;
+@white: #ffffff;
+@grey-dark: #555;
+@grey-light: #f1f1f1;
+
+@red: #ff5656;
+@blue: #3a7498;
+
+@tan: #e8d0a9;
+@clay: #b7afa3;
+@cyan-grey: #c1dad6;
+@light-blue: #a6d8e9;
+@sea-green: #6c919a;
+
+
+.colors {
+  padding: 0;
+  
+  li {
+    list-style: none;
+  }
+}
+
+.colors li {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-right: 30px;
+  padding-top: 1.5em;
+  border-radius: 500px;
+  vertical-align: middle;
+  position: relative;
+  border: 5px solid white;
+  box-shadow: 0 0 1px @grey-light/2;
+}
+
+
+.c-black {
+  background-color: @black;
+  color: @white;
+}
+
+.c-white {
+  background-color: @white;
+  color: @black;
+}
+
+.c-grey-dark {
+  background-color: @grey-dark;
+  color: @white;
+}
+
+.c-grey-light {
+  background-color: @grey-light;
+  color: @black;
+}
+
+.c-red {
+  background-color: @red;
+  color: @white;
+}
+
+.c-blue {
+  background-color: @blue;
+  color: @white;
+}
+
+.c-tan {
+  background-color: @tan;
+  color: @white;
+}
+
+.c-clay {
+  background-color: @clay;
+  color: @white;
+}
+
+.c-cyan-grey {
+  background-color: @cyan-grey;
+  color: @white;
+}
+
+.c-light-blue {
+  background-color: @light-blue;
+  color: @white;
+}
+
+.c-sea-green {
+  background-color: @sea-green;
+  color: @white;
+}
+
+/*FONTS *
+-----------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+body {
+  .lato;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.serif {
+  font-family:"roboto slab","source sans pro",arial, sans-serif;
+}
+
+
+/*TYPOGRAPHY *
+-----------------------------------------------*/
+h2 {
+	font-size: 25px;
+	letter-spacing: -.03em;
+}
+
+h3 {
+	font-size: 22px;
+	letter-spacing: -.03em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 20px;
+	letter-spacing: -.03em;
+	line-height: 1.3em;
+}
+
+h5,h6,h7 {
+	font-size: 18px;
+	letter-spacing: -.02em;
+	line-height: 1.3em;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+.big {
+  font-size: 1.25em;
+}
+
+.muted {
+  color: #999;
+}
+
+.meta {
+  font-size: 80%;
+  .muted;
+}
+
+/*BUTTONS *
+-----------------------------------------------*/
+
+a {
+  color: @blue;
+  outline: 0;
+}
+
+.btn,
+button {
+  display: inline-block;
+  background: @blue;
+  color: white;
+  line-height: 1;
+  padding: 1em;
+  padding: 0.4em 0.7em 0.4em 0.7em;
+  border: 0;
+  text-align: center;
+  .transition;
+  .border-radius;
+  //box-shadow: 0 3px 0 @blue/1.2;
+  
+  &:hover, 
+  &:focus {
+    background: @white;
+    color: black;
+  }
+}
+
+.category {
+  display: inline-block;
+  background: @grey-light;
+  color: @grey-dark;
+  line-height: 1;
+  padding: 1em;
+  padding: 0.4em 0.7em 0.4em 0.7em;
+  border: 0;
+  text-align: center;
+  .transition;
+  //box-shadow: 0 3px 0 @blue/1.2;
+  
+  &:hover, 
+  &:focus {
+    background: @blue;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/*ELEMENTS *
+-----------------------------------------------*/
+.border-radius {
+  border-radius: 3px;
+}
+
+.transition {
+  	transition: all ease-out 300ms;	
+}
+
+
+/*SITE NAV *
+-----------------------------------------------*/
+.site-nav {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "roboto condensed","source sans pro",arial, sans-serif;
+  width: auto;
+  list-style: none;
+}
+
+.site-nav a {
+  color: @black;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  line-height: 60px;
+  width: auto;
+  padding: 0 15px;
+
+  &:hover, 
+  &:focus {
+    color: @white;
+    background-color: @blue;
+    text-decoration: underline;
+  }
+}
+
+.site-nav li {
+  float: left;
+  width: auto;
+}
+
+
+/*BACKGROUNDS *
+-----------------------------------------------*/
+[class*='bg-'] {
+  padding: 2em;
+}
+
+.bg-grey-dark {
+  background: @grey-dark;
+  color: @white;
+}
+
+.bg-blue {
+  background: @blue;
+  color: @white;
+}
+
+.bg-black {
+  background: @black;
+  color: @white;
+}
