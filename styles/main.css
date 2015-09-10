@@ -60,15 +60,15 @@ h1.page-title small {
   box-shadow: 0 0 1px #797979;
 }
 .c-black {
-  background-color: #000000;
+  background-color: #000;
   color: #ffffff;
 }
 .c-white {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #000000;
 }
 .c-grey-dark {
-  background-color: #555555;
+  background-color: #555;
   color: #ffffff;
 }
 .c-grey-light {
